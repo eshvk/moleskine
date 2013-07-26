@@ -1,0 +1,8 @@
+<!-- A footer for every page -->
+Crafted by
+{% if site.author %} 
+     <a href="mailto:{{site.email}}">{{ site.author }}</a> 
+{% else %}
+     <a href="mailto:{{site.email}}">{{ site.title }}</a> 
+{% endif %}
+&copy; {{site.time | date: "%Y" }} 

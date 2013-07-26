@@ -1,0 +1,15 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+
+<!DOCTYPE HTML>
+<html>
+        <head>{% include head.html %}</head>
+        <body>
+                <div class="wrap"> 
+                <header>{% include header.html %}</header>
+                <!-- take the content fed into this template from say index and
+                expands all urls -->
+                {{ content | expand_urls: root_url }}
+                <footer>{% include footer.html %}</footer>
+                </div>
+        </body>
+</html>

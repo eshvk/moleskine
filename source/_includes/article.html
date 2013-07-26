@@ -1,0 +1,16 @@
+<!-- START OF _includes/article.html -->
+<!-- 
+No concept of external url for post. Each post has a date in the header.
+There is an assumption that this partial is included somewhere that defines
+post, root_url and content. post.url is relative. 
+-->
+<article>
+	<header>
+		<h1><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
+		<time>{{ post.date | date: "%d %B %Y" }}</time>
+	</header>
+		<div class="content">
+			{{ content }}
+		</div>
+</article>
+<!-- END OF _includes/article.html -->

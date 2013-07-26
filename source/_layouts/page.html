@@ -1,0 +1,18 @@
+---
+layout: default
+# Tells Jekyll to use the default layout in _layouts directory to build this. 
+---
+<!-- START OF _layouts/page.html -->
+<!-- This is a subtemplate. The way this works is that the page title gets
+centered in its own header, the content gets generated. Then, the whole deal is
+fed into the template default where it gets spit out wherever the content is
+referenced -->
+<article>
+<header>
+	{% if page.title %}
+			<h1 class="center">{{ page.title }}</h1>
+	{% endif %}
+</header>
+{{ content }}
+</article>
+<!-- END OF _layouts/page.html -->
