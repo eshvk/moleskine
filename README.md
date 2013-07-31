@@ -1,4 +1,4 @@
-eyes
+moleskine
 ====
 
 Octopress theme for my site. Easy on my eyes. Largely based on pageturner and
@@ -8,9 +8,9 @@ cleanpress themes. Code commented verbosely to make sense to me.
 TODO 
 ----
 
-1. Figure out how to have categories. 
-2. Connect Flickr account for pictures. 
-3. Take the font and width from pageturner theme. 
-4. Take the idea of having a portfolio from cleanpress. 
-5. Use LSI to generate similar posts. 
-
+1. How to have categories. 
+2. Does a twitter feed make sense? 
+3. Change the angry red lines over links. 
+4. Simple Javascript support
+5. A portfolio? look at skedasis for ideas. 
+6. Salvage more from the old theme (mathjax etc)
