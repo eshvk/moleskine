@@ -2,12 +2,15 @@
 <!-- 
 No concept of external url for post. Each post has a date in the header.
 There is an assumption that this partial is included somewhere that defines
-post, root_url and content. post.url is relative. 
+page, root_url and content. page.url is relative. Note that when this include
+is called by a template, the way Jekyll works is that it defines a 'page' and a
+'site' object. The 'page' object stands for both a 'post' and a 'page'. This is
+why the variable name is so. 
 -->
 <article>
 	<header>
-		<h1><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
-		<time>{{ post.date | date: "%d %B %Y" }}</time>
+		<h1><a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a></h1>
+		<time>{{ page.date | date: "%d %B %Y" }}</time>
 	</header>
 		<div class="content">
 			{{ content }}

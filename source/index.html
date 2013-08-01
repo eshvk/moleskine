@@ -13,8 +13,8 @@ it expanded at the point the default layout defines the content tag. -->
 Jekyll sends a paginator object that contains the posts for that page. Each
 post is taken and the content fed to the article partial in _includes.  
 --> 
-{% for post in paginator.posts %}
-{% assign content = post.content %}
+{% for page in paginator.posts %}
+{% assign content = page.content %}
 {% include article.html %}
 {% endfor %}
 <!--
