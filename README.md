@@ -14,3 +14,4 @@ TODO
 4. Simple Javascript support
 5. A portfolio? look at skedasis for ideas. 
 6. Salvage more from the old theme (mathjax etc)
+7. Why have archives? Why not have categories? 
