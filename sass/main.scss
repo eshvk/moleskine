@@ -279,21 +279,28 @@ p > code {
 		text-align: center;
 		}
 	}
-	
+/* Additional miscellaneous tags */
+.broken-txt {
+            display: block;
+            width: 100%;
+            text-align: center;
+}
+
+
 /* Archive and tags listings */
 .cat-year {
-	padding-top: $year-spacing-bottom;
-	font-family: $year-font-family;
-	font-size: $year-font-size;
-	}
-	
-.cat-month {
-	margin: $month-indent 0 $month-spacing-bottom $month-indent;
-	font-family: $month-font-family;
-	font-size: $month-font-size;
-	}
-	
-.title-listing {
-	margin-left: $month-indent;
-	}
-	
+        padding-top: $year-spacing-bottom;
+        font-family: $year-font-family;
+        font-size: $year-font-size;
+    }
+
+    .cat-month {
+            margin: $month-indent 0 $month-spacing-bottom $month-indent;
+            font-family: $month-font-family;
+            font-size: $month-font-size;
+    }
+
+    .title-listing {
+            margin-left: $month-indent;
+    }
+
