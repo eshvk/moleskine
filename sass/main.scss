@@ -192,13 +192,14 @@ article {
 			font-family: $caption-font-family;
 			font-size: $caption-font-size;
 			}
-			
+/*
+ * Modifiying image tag to have rounded corners and shadows. 
+ */
 		img {
 			max-width: 100%;
-			padding: 4px;
-			@include box-shadow(0 0 0px 1px $gray);
+            @include border-radius(5px);
+            @include box-shadow(0 0 15px rgba(0,0,0,0.35));
 			}
-			
 		.word1,
 		.word2,
 		.word3 {
