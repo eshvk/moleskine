@@ -197,7 +197,7 @@ article {
  */
 		img {
 			max-width: 100%;
-            @include border-radius(5px);
+            @include border-radius(10px);
             @include box-shadow(0 0 15px rgba(0,0,0,0.35));
 			}
 		.word1,
