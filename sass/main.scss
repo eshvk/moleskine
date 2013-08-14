@@ -193,13 +193,15 @@ article {
 			font-family: $caption-font-family;
 			font-size: $caption-font-size;
 			}
-/*
- * Modifiying image tag to have rounded corners and shadows. 
- */
+        /*
+         * Modifiying image tag to have rounded corners and shadows. 
+         */
 		img {
 			max-width: 100%;
+            height: auto;
             @include border-radius(10px);
             @include box-shadow(0 0 15px rgba(0,0,0,0.35));
+            border-bottom: 0px;
 			}
 		.word1,
 		.word2,
@@ -208,6 +210,21 @@ article {
 			font-variant: $post-first-words-font-variant;
 			}
 		}
+    .gallery {
+        /*
+         * Modifiying image tag to have rounded corners and shadows. 
+         */
+		img {
+			max-width: 100%;
+            height: auto;
+            @include border-radius(10px);
+            @include box-shadow(0 0 15px rgba(0,0,0,0.35));
+            border-bottom: 0px;
+			}
+        text-align: center !important;
+    }
+
+
 	}
 	
 /* Code blocks */
