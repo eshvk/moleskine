@@ -10,10 +10,30 @@ title, use that.  -->
 <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
 <!-- favicon support; insert your favicon in the folder images -->
 <link href="{{ root_url }}/images/favicon.png" rel="shortcut icon">
-<!-- I have no idea why we need jQuery --> 
 <!-- jQuery and plugins -->
+<!-- jQuery helps with fancybox --> 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<!-- I have no idea why we need zclip --> 
 <script src="{{ root_url }}/javascripts/jquery.zclip.min.js"></script>
+<!-- Latex Integration --> 
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+<!-- copied from a blog; note that kramdown requires that there is a block
+identifier before the Latex stuff -->
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                jax: ["input/TeX", "output/HTML-CSS"],
+                tex2jax: {
+                        inlineMath: [ ['$', '$'] ],
+                        displayMath: [ ['$$', '$$']],
+                        processEscapes: true,
+                        skipTags: ['script', 'noscript', 'style',
+                        'textarea', 'pre', 'code']
+                },
+                messageStyle: "none",
+                "HTML-CSS": { preferredFont: "TeX",
+                        availableFonts: ["STIX","TeX"] }
+        });
+</script>
 <!-- Styles -->
 <!-- I have no idea how this is computed from scss file -->
 <link href="{{ root_url }}/stylesheets/main.css" rel="stylesheet">
