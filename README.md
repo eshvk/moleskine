@@ -19,9 +19,11 @@ TODO
 - A portfolio? look at [skedasis][skedasis] for ideas. 
 - What else needs to taken from the old theme? 
 - Some analytics tool? Google analytics, mixpanel? do I care?  
+- Coding style. Look at [d3][d3site]
 
 [pt]: https://github.com/elisehein/Pageturner
 [clp]: https://github.com/macjasp/cleanpress
 [gist1]: https://gist.github.com/eshwaran/6232897
 [gist2]: https://gist.github.com/eshwaran/6232884
 [skedasis]: http://skedasis.com/
+[d3]: http://d3js.org/
