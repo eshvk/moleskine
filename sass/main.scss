@@ -4,6 +4,16 @@
 @import "responsive";
 @import "plugins";
 
+/* Mixin for image to have rounded corners, shadows */
+@mixin img {
+        max-width: 100%;
+        height: auto;
+        @include border-radius(10px);
+        @include box-shadow(0 0 15px rgba(0,0,0,0.35));
+        border-bottom: 0px;
+}
+
+
 *::selection {
 	background: $main-color;
 	color: $white;
@@ -196,35 +206,29 @@ article {
         /*
          * Modifiying image tag to have rounded corners and shadows. 
          */
-		img {
-			max-width: 100%;
-            height: auto;
-            @include border-radius(10px);
-            @include box-shadow(0 0 15px rgba(0,0,0,0.35));
-            border-bottom: 0px;
-			}
 		.word1,
 		.word2,
 		.word3 {
 			font-size: $post-first-words-font-size;
 			font-variant: $post-first-words-font-variant;
 			}
+		.left {
+			text-align: left !important;
 		}
-    .gallery {
-        /*
-         * Modifiying image tag to have rounded corners and shadows. 
-         */
-		img {
-			max-width: 100%;
-            height: auto;
-            @include border-radius(10px);
-            @include box-shadow(0 0 15px rgba(0,0,0,0.35));
-            border-bottom: 0px;
-			}
-        text-align: center !important;
-    }
-
-
+		.right {
+			text-align: right !important;
+		}
+		.center {
+			text-align: center !important;
+		}
+    	.gallery {
+   			@include img;    
+      	  	text-align: center !important;
+    	}
+    	.photo {
+    		@include img;
+    	}
+		}
 	}
 	
 /* Code blocks */
