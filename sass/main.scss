@@ -5,7 +5,7 @@
 @import "plugins";
 
 /* Mixin for image to have rounded corners, shadows */
-@mixin img {
+@mixin image {
         max-width: 100%;
         height: auto;
         @include border-radius(10px);
@@ -222,15 +222,35 @@ article {
 			text-align: center !important;
 		}
     	.gallery {
-   			@include img;    
+   			@include image;    
       	  	text-align: center !important;
     	}
     	.photo {
-    		@include img;
+    		@include image;
     	}
 		}
 	}
-	
+/* Image Styles */
+.photo-left, .photo-right, .photo-center {
+	img {
+		@include image;
+	}
+}
+.photo-left {
+	text-align: left !important;
+	}
+.photo-right {
+	text-align: right !important;
+	}
+.photo-center {
+	text-align: center !important;
+	}
+.gallery {
+	img {
+		@include image;
+	}
+	text-align: center !important;
+	}	
 /* Code blocks */
 pre {
 	position: relative;
