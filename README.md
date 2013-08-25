@@ -18,7 +18,6 @@ TODO
 - Why have archives? Why not categories? 
 - A portfolio? look at [skedasis][skedasis] for ideas. 
 - What else needs to taken from the old theme? 
-- Some analytics tool? Google analytics, mixpanel? do I care?  
 - Coding style. Look at [d3][d3site]
 
 [pt]: https://github.com/elisehein/Pageturner

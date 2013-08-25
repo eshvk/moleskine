@@ -199,13 +199,13 @@ article {
 		}
 		
 	p {
+        /* The stuff here are descendant selectors which means that they apply
+         * only for stuff are contained in a paragraph. 
+         */
 		.caption {
 			font-family: $caption-font-family;
 			font-size: $caption-font-size;
 			}
-        /*
-         * Modifiying image tag to have rounded corners and shadows. 
-         */
 		.word1,
 		.word2,
 		.word3 {
